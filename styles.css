@@ -1,0 +1,184 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #1968b3;
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+header .logo img {
+    height: 50px;
+    width: 100px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    padding: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    background-color: #005c99;
+}
+
+.main-content {
+    padding: 40px;
+    text-align: center;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 10px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-content h1 {
+    font-size: 36px;
+    color: #003366;
+}
+
+.main-content p {
+    font-size: 18px;
+    color: #333333;
+}
+
+.bill-payment-btn {
+    display: inline-block;
+    background-color: #0066cc;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.bill-payment-btn:hover {
+    background-color: #004d99;
+}
+
+#check-reading {
+    padding: 40px;
+    text-align: center;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 10px;
+}
+
+#check-reading h2 {
+    font-size: 30px;
+    color: #003366;
+}
+
+#check-reading p {
+    font-size: 18px;
+    color: #333333;
+}
+
+.check-reading-btn {
+    display: inline-block;
+    background-color: #28a745;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.check-reading-btn:hover {
+    background-color: #218838;
+}
+
+footer {
+    background-color: #1968b3;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    margin-top: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .main-content {
+        padding: 20px;
+        margin: 10px;
+    }
+
+    .main-content h1, .main-content h2 {
+        font-size: 28px;
+    }
+
+    .main-content p {
+        font-size: 16px;
+    }
+
+    .bill-payment-btn, .check-reading-btn {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    header .logo img {
+        height: 40px;
+        width: 80px;
+    }
+
+    nav ul li a {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .bill-payment-btn, .check-reading-btn {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+}
